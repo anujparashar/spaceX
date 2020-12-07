@@ -1,0 +1,21 @@
+<table>
+    <tr  class="row">
+        <td *ngFor="let yr of yearArray; let i = index" class="col1">
+            <button class="filterBtn" (click)="filter('year', yr)">
+                {{yr}}
+            </button>
+        </td>
+    </tr>
+</table>
+<div>
+    <p>
+        Successful Launch
+    </p>
+    <button class="bolBtn" (click)="filter('launch', true)">True</button>
+    <button class="bolBtn" (click)="filter('launch', false)">False</button>
+    <p>
+        Successful Landing
+    </p>
+    <button class="bolBtn" (click)="filter('land', true)">True</button>
+    <button class="bolBtn" (click)="filter('land', false)">False</button>
+</div>

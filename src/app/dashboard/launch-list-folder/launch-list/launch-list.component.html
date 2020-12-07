@@ -1,0 +1,17 @@
+<div class="row">
+    <!-- //for testing purpose -->
+    <!-- <ng-container *ngFor="let img of imgSrc">
+        <img [src]='img.src' class="column">
+        <div class="imgContent">
+            {{img.name}}
+        </div>
+    </ng-container> -->
+
+    <!-- real filtered data rendering -->
+    <ng-container *ngFor="let obj of allLaunchDtls">
+        <img [src]='obj.links.mission_patch_small' class="column">
+        <div class="imgContent">
+            {{obj?.mission_name}}
+        </div>
+    </ng-container>
+</div>

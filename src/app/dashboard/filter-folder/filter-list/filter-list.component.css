@@ -1,0 +1,15 @@
+.col1{
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 4px;
+}
+.filterBtn{
+    background-color: rgb(220, 255, 168);
+    border-radius: 0cm;
+    padding: 5px;
+    margin-top: 10px;
+}
+.bolBtn{
+    margin-right: 5px;
+    background-color: rgb(220, 255, 168);
+}
